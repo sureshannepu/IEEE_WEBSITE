@@ -1543,3 +1543,240 @@ section {
   clear: both;
   display: block;
 }
+.f{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 100px;
+  width: 100%;
+}
+
+/* Basic styles for cards */
+.card {
+  width: 18rem;
+  margin: 10px;
+  float: left;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Two cards in a row */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* One card per row */
+  }
+}
+/* Add this CSS code to your existing styles.css file or within a <style> tag in your HTML file */
+/* Media queries for responsive design */
+
+/* Small screens (up to 576px) */
+@media (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .column img {
+    width: 80%; /* Adjust the image size as needed */
+    height: auto;
+  }
+
+  header.sticky-top {
+    padding: 10px;
+  }
+}
+
+/* Medium screens (up to 768px) */
+@media (max-width: 768px) {
+  .column img {
+    width: 70%; /* Adjust the image size as needed */
+  }
+}
+
+/* Large screens (up to 992px) */
+@media (max-width: 992px) {
+  .column img {
+    width: 60%; /* Adjust the image size as needed */
+  }
+}
+
+/* Extra large screens (greater than 1200px) */
+@media (min-width: 1200px) {
+  .column img {
+    width: 100%; /* Reset the image size for larger screens */
+  }
+}
+/* Add this CSS code to your existing styles.css file or within a <style> tag in your HTML file */
+/* Media queries for responsive design */
+
+/* Small screens (up to 576px) */
+@media (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .column img {
+    width: 80%; /* Adjust the image size as needed */
+    height: auto;
+  }
+
+  header.sticky-top {
+    padding: 10px;
+  }
+
+  /* Hide the icons in the header */
+  #navbar ul li.dropdown {
+    display: none;
+  }
+
+  #navbar ul li.dropdown.open {
+    display: block;
+  }
+}
+
+/* Medium screens (up to 768px) */
+@media (max-width: 768px) {
+  .column img {
+    width: 70%; /* Adjust the image size as needed */
+  }
+}
+
+/* Large screens (up to 992px) */
+@media (max-width: 992px) {
+  .column img {
+    width: 60%; /* Adjust the image size as needed */
+  }
+}
+
+/* Extra large screens (greater than 1200px) */
+@media (min-width: 1200px) {
+  .column img {
+    width: 100%; /* Reset the image size for larger screens */
+  }
+
+  /* Reset the display property for icons */
+  #navbar ul li.dropdown {
+    display: inline-block;
+  }
+}
+
+/* Default styles */
+.conference-img {
+  width: 1460px;
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .col-lg-3 {
+      width: 100%;
+      max-width: 100%;
+  }
+  
+  .col-md-6 {
+      width: 100%;
+      max-width: 100%;
+  }
+  
+  .conference-img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+  }
+}
+/* Default styles */
+.conference-img {
+  width: 1460px;
+  height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .col-lg-3 {
+      width: 100%;
+      max-width: 100%;
+  }
+  
+  .col-md-6 {
+      width: 100%;
+      max-width: 100%;
+  }
+  
+  .conference-img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+  }
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .column-1 {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+
+  .block-content {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+
+  h5 {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust other styles as needed */
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+  .column-1 {
+    width: 100%; /* Adjust the width for even smaller screens */
+  }
+
+  .block-content {
+    width: 100%; /* Adjust the width for even smaller screens */
+  }
+
+  h5 {
+    font-size: 14px; /* Further adjust font size for smaller screens */
+  }
+  .card {
+    margin: 10px;
+    text-align: justify;
+    max-width: 300px;
+     /* Set a maximum width for the cards */
+     
+  }
+
+  .card-img-top {
+    width: 200px; /* Set a fixed width for the images */
+    height: 200px; /* Set a fixed height for the images */
+  }
+
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; /* Stack cards vertically on small screens */
+      align-items: center; /* Center cards vertically */
+    }
+  }
+}
+
+
